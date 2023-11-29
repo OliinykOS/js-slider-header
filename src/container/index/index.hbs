@@ -3,8 +3,39 @@
 в якому міститься код, котрий буде віддаватися по шляху (PATH) - "/"
 }}
 
-<main>
-	{{>heading title="Index" info=data.test}}
+<main class="page">
+
+    <header class="header">
+        <div class="header__top">
+            <div class="header__list">
+                <a href="#" class="header__link">Home</a>
+                <a href="#" class="header__link">About</a>
+                <a href="#" class="header__link">Contact</a>
+            </div>
+            <button class="header__button header__button--open"></button>
+        </div>
+        <div class="header__wrapper">
+            <div class="header__bottom">
+                <div class="header__list header__list--top">
+                    <a href="#" class="header__link">Service</a>
+                    <a href="#" class="header__link">Privacy</a>
+                    <a href="#" class="header__link">Clients</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+	<div class="slider">
+        <div class="slider__list">
+            <img src="https://picsum.photos/600/400" class="Slider__item" >
+            <img src="https://picsum.photos/600/400" class="Slider__item" >
+            <img src="https://picsum.photos/600/400" class="Slider__item" >
+            <img src="https://picsum.photos/600/400" class="Slider__item" >
+        </div>
+
+        <button class="slider__button left_button"><img src="/svg/arrow_left.svg" alt="left"></button>
+        <button class="slider__button right_button"><img src="/svg/arrow_right.svg" alt="right"></button>
+    </div>
 </main>
 
 {{!
